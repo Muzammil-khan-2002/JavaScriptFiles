@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Bookmarks</title>
+    <style>
+        .container{
+            box-sizing: border-box;
+            height: 92vh;
+            width: 70vw;
+            border: 2px solid black;
+            margin: auto;
+        }
+        .take_input{
+            box-sizing: border-box;
+            width: 50vw;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            border: 2px solid red;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .input{
+            height: 60px;
+            border-radius:15px;
+            padding-left: 25px;
+        }
+        .button{
+            border-radius: 15px;
+            height: 50px;
+        }
+        .gate_input{
+           
+            border: 2px solid green;
+            height: 60vh;
+            width: 50vw;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>By Using Event Listner add bookmark</h3>
+        <div class="take_input">
+            <input type="text" class="input" id="user_url" placeholder="Enter Favorite URL -----------------?">
+            <input type="button" id="user_button" class="button" value="Add to Bookmark">
+        </div>
+        <div class="gate_input">
+            <ul id="bookmarked"></ul>
+        </div>
+    </div>
+    <script src="chapter_08_3.js"></script>
+</body>
+</html>
